@@ -1,0 +1,68 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: linear-gradient(0deg, rgba(160,208,217,1) 0%, rgba(160,208,217,1) 80%, rgba(103,122,149,1) 100%);
+}
+
+.container {
+    max-width: 300px;
+    padding: 0 11px;
+    margin: auto;
+    position: relative;
+}
+
+h1, .h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2, .h2 {
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+button {
+    background:transparent;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 11px;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+header {
+    margin: 50px 0;
+}
+
+main {
+    margin-top:72px;
+
+    &.waiting-for-opponent {
+        margin-top:108px;
+
+        .h2 {
+            text-transform: none;
+        }
+
+        .player-choice {
+            margin: 100px 0;
+        }
+    }
+}
+.hidden {
+    display: none!important;
+}
